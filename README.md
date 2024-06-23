@@ -9,12 +9,13 @@ me down a slightly mind boggling path of learning what about Donald Knuth's
 algorithms. I am definitely not an expert in this algorithm, but was able to get
 something working with the help of Ali Assaf's post and implementation of AlgorithmX.
 
-The examples in this repository can solve Sudoku and Pentomino puzzles relativly
-quickly. While all these examples work in Python3, I highly recomend using
+The examples in this repository can solve Sudoku and Pentomino puzzles relatively
+quickly. While all these examples work in Python3, I highly recommend using
 [pypy](https://www.pypy.org/download.html) as it is much faster for these types
 of problems.
 
 ## Example Pentomino Solver
+
 ```python
 from pentomino import Puzzle
 
@@ -42,8 +43,10 @@ for board in solutions:
 ```
 
 ## Example Dragonfjord Command Line Solver
+
 Only show a single random solution is displayed when running from the command line
 as seeing all solutions was a bit unwieldy.
+
 ```bash
 > python3 dragonfjord.py --month=5 --day=29
 🟦🟦🟦🟦⬛🟧⬛
@@ -58,6 +61,7 @@ Found 66 solutions after 5.5s.
 ```
 
 ## Example Sudoku Solver
+
 This solver is not my code, but Ali Assaf's. Copied from his posted example,
 cleaned up Python 3 styles, and commented to help me understand. I included
 it in this repo to hopefully help other's learn this algorithm usage as well.
@@ -91,12 +95,13 @@ for solution in solve_sudoku(grid):
 [1, 4, 9, 2, 6, 8, 3, 7, 5]
 ```
 
-
 ## Thanks To
+
 * [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth) for coming up with
   [AlgorithmX](https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X).
 * [Ali Assaf](https://www.cs.mcgill.ca/~aassaf9/index.html) for the short implementation
   of AlgorithX as well as a [great write up and example](https://www.cs.mcgill.ca/~aassaf9/python/algorithm_x.html).
 
 ## License
+
 GNU General Public License <http://www.gnu.org/licenses/>
